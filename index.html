@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BERNICE - Artisanal Cookies</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="#">BERNICE</a>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#">COOKIES</a></li>
+          <li><a href="#">CAKES</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="#" class="icon cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <a href="#" class="icon search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" 
+    style="
+      position: relative; 
+      width: 100vw; 
+      height: 100vh; 
+      overflow: hidden;
+    "
+  >
+    <div class="hero-image-container" 
+      style="
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: -1;
+      "
+    >
+      <div class="hero-image" 
+        style="
+          width: 100%; 
+          height: 100%;
+        "
+      >
+        <img src="./public/hero.jpg" alt="Hero Image" 
+          style="
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+          "
+        >
+      </div>
+    </div>
+
+    <div class="hero-content" 
+      style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100%; 
+        width: 100%; 
+        text-align: center; 
+        color: white; 
+        font-family: 'Oswald', sans-serif;
+        position: absolute; 
+        top: 0; 
+        left: 0;
+      "
+    >
+      <h1 
+        style="
+          font-size: 12vw; 
+          letter-spacing: 3px; 
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+          line-height: 1.1;
+        "
+      >
+        A BAKING<br>LOVE AFFAIR
+      </h1>
+    </div>
+
+    <div class="indulge-circle" 
+      style="
+        position: absolute; 
+        bottom: 2rem; 
+        right: 2rem; 
+        width: 150px; 
+        height: 150px; 
+        border-radius: 50%; 
+        background-color: rgba(255, 255, 255, 0.8); 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <span 
+        style="
+          font-weight: bold; 
+          font-size: 1.5rem; 
+          color: #333;
+        "
+      >
+        INDULGE
+      </span>
+    </div>
+  </section>
+
+  <section class="info-section" 
+    style="
+      display: flex; 
+      height: 100vh; 
+      width: 100vw; 
+      padding: 5vw; 
+      box-sizing: border-box; 
+      background-color: #f5f5f5; 
+      color: #333; 
+      font-family: 'Oswald', sans-serif;
+    "
+  >
+    <!-- LEFT SIDE -->
+    <div class="left-text" 
+      style="
+        flex: 1; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        text-align: left; 
+        font-size: 5vw; 
+        font-weight: bold; 
+        letter-spacing: -2px; 
+        line-height: 1;
+        word-break: break-word;
+      "
+    >
+      Good food should both<br>comfort and nourish the soul
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-text" 
+      style="
+        flex: 1; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: left; 
+        font-size: 1.5rem; 
+        line-height: 1.8;
+        padding-left: 3rem;
+      "
+    >
+      We are centrally located in the neighborhood of St-Henri. Stop by for a coffee, catch up on work, or grab some of our delicious goodies to go. With cookies and cakes available for online order, there’s something for everyone, and every occasion.
+    </div>
+  </section>
+
+  <!-- Cookie Hero Section -->
+  <section class="cookie-hero">
+    <div class="bestsellers-background">
+      <div class="bestsellers-text">BESTSELLERS</div>
+    </div>
+  </section>
+
+  <div class="h-screen flex items-center justify-center bg-pink-100">
+    <p class="text-4xl font-bold text-pink-800 tracking-wide">
+      The best things in life are sweet
+    </p>
+  </div>
+  
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
